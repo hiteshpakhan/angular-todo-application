@@ -6,5 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'old-v-angular-learning';
+  // title = 'old-v-angular-learning';
+  
+
+  constructor(){
+
+    // setTimeout(()=>{
+    //   this.title = "surprise surprise mf"
+    // }, 3000);
+
+    
+    // setInterval(()=>{
+    //   if(this.title == 'old-v-angular-learning'){
+    //     this.title = "surprise surprise mf"
+    //   }else{
+    //     this.title = 'old-v-angular-learning'
+    //   }
+    // }, 3000);
+  
+  }
 }

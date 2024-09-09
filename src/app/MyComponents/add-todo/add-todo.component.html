@@ -1,0 +1,13 @@
+<p style="padding-top: 2%; margin: 0%; text-align: center;">Add a Todo</p>
+<p style="padding-bottom: 2%; margin: 0%; text-align: center; color: rgb(127, 169, 210);">(tip: this todos will also be automatically added to your localstorage)</p>
+<form (ngSubmit)="onSubmit()" style="width: 50%; margin: auto;  padding-bottom: 2% !important; color: rgb(255, 255, 255);">    <!-- ngSubmit also do work in the backgroiund like priventDefault() that stops the page from reloding -->
+    <div class="">
+        <label for="title" style="font-size:xx-large;">todo Title</label>
+        <input [(ngModel)]="title" type="text" name="title" id="title" style="width: 100%;" >
+    </div>
+    <div class="">
+        <label for="desc" style="font-size:xx-large;">todo Desc</label>
+        <input [(ngModel)]="desc" type="text" name="desc" id="desc" style="width: 100%;" >
+    </div>
+    <button type="submit">Submit</button>
+</form>

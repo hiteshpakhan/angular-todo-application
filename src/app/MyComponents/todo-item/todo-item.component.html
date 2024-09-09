@@ -1,0 +1,14 @@
+<div>todo-item works!
+    <h3 style="margin: 0%;" [ngClass]="{'strike': !todo.active}" >
+        {{todo.title}}
+    </h3>
+    <p style="margin: 0%;" [ngClass]="{'strike': !todo.active}" >{{todo.desc}}</p>
+    <div >
+        <label for="exampleCheck{{i}}">Done</label>
+        <input type="checkbox" (click)="onCheckboxClick(todo)" [checked]="!todo.active" id="exampleCheck{{i}}">
+    </div>
+    <button
+        (click)="onDelete(todo)" 
+        style="background-color: blueviolet; height: 30px; width: 70px; border-radius: 10px;"
+    >Delete</button>
+</div>

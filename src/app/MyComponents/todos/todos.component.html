@@ -1,0 +1,27 @@
+<!-- <div>
+    <div style="text-align: center;margin: 20px;"> To-Do List by "{{title}}" </div>
+</div> -->
+<!-- 
+<hr> -->
+<app-add-todo (addTodo)="todoAdding($event)" ></app-add-todo>
+
+
+<div *ngIf="this.todos.length==0; else elseBlock7" style="text-align: center; background-color: rgb(162, 147, 127); color: rgb(255, 255, 255);">
+    please add todos your list is empty
+</div>
+<ng-template #elseBlock7>
+    <div style=" background-color: rgb(162, 147, 127);; ">
+        <h3 style="text-align: center; margin: 0%; padding: 0%;">your todos:</h3>
+        
+        <div style="  width: 60%;  margin: auto; padding: 10px !important;  ">
+            <ul *ngFor="let todo of todos; index as i" style="background-color: rgb(199, 199, 199); border-radius: 6px; margin: 10px !important; ">
+                <app-todo-item 
+                [i]="i"
+                [todo]="todo" 
+                (todoDelete)="deleteTodo($event)"
+                (checkBox)="toggleTodo($event)" ></app-todo-item>
+            </ul>
+        </div>
+    </div>
+</ng-template>
+
