@@ -1,17 +1,14 @@
-<h1 style="margin: 0; padding: 0%; background-color: #474e5d; color: white; display: flex; flex-direction: column; "  >
-    <Nav class="navber" style="display: flex; justify-content:space-around; padding: 10px; height: 45px;">
-        <div>Todos list project</div>
+<div style="font-size: x-large; margin: 0; padding: 0%;  display: flex; flex-direction: column; "  >
+    <Nav class="navber" style="display: flex; justify-content:space-around; padding: 10px; height: 2.2rem;">
+        <div><a style="text-decoration: none; color: white;"  routerLink="/"> Todos list project </a></div>
         <ul style="display: flex; list-style-type: none; margin: 0;   ">
             <li ><a style="text-decoration: none; color: white;"  routerLink="/"> home </a></li>  
             <!-- now with angular we dont use the href here we will use the routerlink='' -->
             <li style="padding-left: 10px;"><a style="text-decoration: none; color: white;"  routerLink="/about"> about </a></li>
-            <li style="padding-left: 10px;"><a style="text-decoration: none; color: white;" > nothing </a></li>
         </ul>
-        <input type="search" style="margin-left: 20px; border-radius: 10px; width: 200px;" />
     </Nav>
     
-    <!-- <app-todos></app-todos> -->
 
     <router-outlet></router-outlet>
 
-</h1>
+</div>

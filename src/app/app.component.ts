@@ -11,18 +11,5 @@ export class AppComponent {
 
   constructor(){
 
-    // setTimeout(()=>{
-    //   this.title = "surprise surprise mf"
-    // }, 3000);
-
-    
-    // setInterval(()=>{
-    //   if(this.title == 'old-v-angular-learning'){
-    //     this.title = "surprise surprise mf"
-    //   }else{
-    //     this.title = 'old-v-angular-learning'
-    //   }
-    // }, 3000);
-  
   }
 }

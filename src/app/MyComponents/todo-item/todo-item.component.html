@@ -1,14 +1,17 @@
-<div>todo-item works!
-    <h3 style="margin: 0%;" [ngClass]="{'strike': !todo.active}" >
-        {{todo.title}}
+<div style="display: flex; flex-direction: column; align-content: space-between;" >
+    <div>
+    TodoNo: {{i+1}}
+</div>
+    <h3 style="margin: 0%;" [ngClass]="{'strike': !todo.active}" >  <!-- css property -->
+        Title: {{todo.title}}
     </h3>
-    <p style="margin: 0%;" [ngClass]="{'strike': !todo.active}" >{{todo.desc}}</p>
+    <p style="margin: 0%;" [ngClass]="{'strike': !todo.active}" >Description: {{todo.desc}}</p>
     <div >
         <label for="exampleCheck{{i}}">Done</label>
         <input type="checkbox" (click)="onCheckboxClick(todo)" [checked]="!todo.active" id="exampleCheck{{i}}">
     </div>
     <button
         (click)="onDelete(todo)" 
-        style="background-color: blueviolet; height: 30px; width: 70px; border-radius: 10px;"
+        style="background-color: rgb(223, 189, 255); height: 30px; width: 70px; border-radius: 10px;"
     >Delete</button>
 </div>
